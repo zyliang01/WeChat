@@ -1,0 +1,49 @@
+/**
+ * Created by zhuyunliang on 2016/11/26.
+ */
+var app=angular.module("myApp",["ionic","myAppCtrl"]);
+app.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider
+        .state("tab",{
+            url:"/tab",
+            abstract:true,
+            templateUrl:"templates/tabs.html"
+        })
+        .state("tab.weChat",{
+            url:"/weChat",
+            views:{
+                "tab-weChat":{
+                   templateUrl:"templates/tab-weChat.html",
+                    controller:"weChatCtrl"
+                }
+            }
+        })
+        .state("tab.mailList",{
+            url:"/mailList",
+            views:{
+                "tab-mailList":{
+                    templateUrl:"templates/tab-mailList.html",
+                    controller:"mailListCtrl"
+                }
+            }
+        })
+        .state("tab.discover",{
+            url:"/discover",
+            views:{
+                "tab-discover":{
+                    templateUrl:"templates/tab-discover.html",
+                    controller:"discoverCtrl"
+                }
+            }
+        })
+        .state("tab.me",{
+            url:"/me",
+            views:{
+                "tab-me":{
+                    templateUrl:"templates/tab-me.html",
+                    controller:"meCtrl"
+                }
+            }
+        });
+   $urlRouterProvider.otherwise("/tab/discover")
+});
