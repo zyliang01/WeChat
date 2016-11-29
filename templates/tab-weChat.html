@@ -1,31 +1,53 @@
-<ion-view view-title="微信" >
-    <i class="icon ion-chatbubbles balanced"></i>
+<meta charset="UTF-8">
+<ion-view >
     <ion-content>
-        <ion-header-bar class="bar bar-light">
+        <ion-header-bar class="bar bar-dark">
+            <h1 class="title" style="font-size:22px">微信</h1>
+            <i class="button button-clear icon ion-plus" ng-click="openPopover($event)"></i>
+        </ion-header-bar>
+        <ion-header-bar class="bar-subheader bar-light" style="border-bottom: 1px solid #ccc">
             <h6 class="title icon ion-android-desktop">&nbsp;Mac 微信已登陆，手机通知已关闭</h6>
         </ion-header-bar>
-        <div class="list scroll-content has-header">
-            <div class="item item-avatar-left">
+        <ion-list class="list scroll-content has-subheader">
+            <ion-item class="item item-avatar-left" >
                 <img src="image/cow1.jpeg" alt="">
-                <!--虽然这里路径不对，但是是引用到index.html，所以以index的为准-->
+               <!--虽然这里路径不对，但是是引用到index.html，所以以index的为准-->
                 <h2>老司机 <span style="float:right;color:#333;">19:33</span></h2>
                 <p>哦，是这样啊</p>
-            </div>
-            <div class="item item-avatar-left">
+                <ion-option-button class="button-dark">标为未读</ion-option-button>
+                <ion-option-button class="button-assertive " ng-click="delete(item)">删除</ion-option-button>
+            </ion-item>
+            <ion-item class="item item-avatar-left">
                 <img src="image/daye.jpeg" alt="">
                 <h2>朱云亮<span style="float:right;color:#333;">19:03</span></h2>
                 <p>那遥远的未来</p>
-            </div>
-            <div class="item item-avatar-left">
+                <ion-option-button class="button-dark">标为未读</ion-option-button>
+                <ion-option-button class="button-assertive ">删除</ion-option-button>
+            </ion-item>
+            <ion-item class="item item-avatar-left">
                 <img src="image/WechatIMG4.jpeg" alt="">
                 <h2>文件传输助手<span style="float:right;color:#333;">11:03</span></h2>
                 <p>[图片]</p>
-            </div>
-            <div class="item item-avatar-left">
+                <ion-option-button class="button-dark">标为未读</ion-option-button>
+                <ion-option-button class="button-assertive ">删除</ion-option-button>
+            </ion-item>
+            <ion-item class="item item-avatar-left">
                 <img src="image/WechatIMG5.jpeg" alt="">
                 <h2>微信支付<span style="float:right;color:#333;">星期五</span></h2>
                 <p>微信支付凭证</p>
-            </div>
-        </div>
+                <ion-option-button class="button-dark">标为未读</ion-option-button>
+                <ion-option-button class="button-assertive ">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
     </ion-content>
+    <script id="popover.html" type="text/ng-template">
+        <ion-popover-view style="height:auto;width:160px;">
+                <ion-list  ng-click="closePopover()" >
+                <ion-item><i class="icon ion-chatbubble dark"></i>&nbsp;&nbsp;&nbsp;&nbsp;发起群聊</ion-item>
+                <ion-item><i class="icon ion-person-add dark"></i>&nbsp;&nbsp;&nbsp;&nbsp;添加朋友</ion-item>
+                <ion-item><img src="image/swipe.png" width="15px" alt="">&nbsp;&nbsp;&nbsp;&nbsp;扫一扫</ion-item>
+                <ion-item><i class="icon ion-social-yen dark"></i>&nbsp;&nbsp;&nbsp;&nbsp;收付款</ion-item>
+                </ion-list>
+                </ion-popover-view>
+    </script>
 </ion-view>

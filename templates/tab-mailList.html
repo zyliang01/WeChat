@@ -1,10 +1,60 @@
-<ion-view view-title="通讯录">
-    <ion-content>
-        <ion-header-bar class="item-input-inset">
+<ion-view>
+    <ion-content overflow-scroll="true">
+        <ion-header-bar class="bar bar-dark">
+            <h1 class="title" style="font-size:22px">通讯录</h1>
+            <i class="button button-clear icon ion-person-add"></i>
+        </ion-header-bar>
+        <ion-list class="list scroll-content has-header">
+            <ion-item class="item-input-inset">
                 <label class="item-input-wrapper">
                     <i class="icon ion-ios-search placeholder-icon"></i>
                     <input type="search" placeholder="搜索">
+                    <i class="icon ion-android-microphone placeholder-icon"></i>
                 </label>
-        </ion-header-bar>
+            </ion-item>
+            <ion-item style="padding:10px;">
+                <img src="image/newfriend.png" alt="" style="vertical-align: middle;width:36px;">
+               &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">新的朋友</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/friend.png" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">群聊</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/tip.png" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">标签</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/gongzhonghao.png" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">公众号</span>
+            </ion-item>
+            <ion-item class="item-divider">A</ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/daye.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">澳洲</span>
+            </ion-item>
+            <ion-item class="item-divider">B</ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/cow1.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">八哥</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/cow.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">八爷</span>
+            </ion-item>
+            <ion-item class="item-divider">C</ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/cow1.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">沉鱼落雁</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/cow.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">陈晨</span>
+            </ion-item>
+            <ion-item style="padding:8px;">
+                <img src="image/daye.jpeg" alt="" style="vertical-align: middle;width:36px;">
+                &nbsp;&nbsp; <span style="vertical-align: middle;font-size:18px;">橙子</span>
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>

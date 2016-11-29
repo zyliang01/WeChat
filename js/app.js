@@ -45,5 +45,5 @@ app.config(function($stateProvider,$urlRouterProvider){
                 }
             }
         });
-   $urlRouterProvider.otherwise("/tab/discover")
+   $urlRouterProvider.otherwise("/tab/weChat")
 });
